@@ -1,0 +1,729 @@
+/* jenn */
+
+/* GENERIC TAGS */
+
+body {
+  background-color: #99A5AD;
+  color: white;
+  font-family: monospace;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+
+input {
+  border-radius: 6px;
+  width: 400px;
+  color: black;
+  height: 33px;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+h2 {
+  color: black;
+  font-size: 50px;
+  text-shadow: 1px 1px 2px #377BB5;
+}
+
+h4 {
+  margin-left: -50px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 1px 1px 2px #377BB5;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+p {
+  color: black;
+  font-size: 15px;
+}
+
+h6 {
+  color: white;
+}
+
+ul {
+  color: white;
+}
+
+span {
+  color: #D10101;
+}
+
+strong {
+  color: #D10101;
+}
+
+.Select{
+  width: 400px;
+}
+
+.App {
+  text-align: center;
+  text-decoration: none;
+}
+
+/* END */
+
+/* HOME */
+
+.homeWell {
+  border-radius: 15px;
+  animation-name: homewell;
+  animation-duration: .6s;
+  border: 1px solid black;
+}
+
+@keyframes homewell {
+  0% {margin-left: -150px;}
+  100% {margin-left: 0px;}
+}
+
+.rosieLogo2 {
+  border-radius: 5px;
+  border: 1px solid white;
+  margin-right: 10px;
+}
+
+.homeContainer {
+  position: relative;
+  width: 50%;
+  margin-left: 70px;
+}
+
+.rosieLogo {
+  margin-bottom: 120px;
+  margin-left: 210px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px black;
+  transition: all .5s ease;
+  cursor: grab;
+  animation-name: homelogo;
+  animation-duration: .7s;
+}
+
+@keyframes homelogo {
+  0% {margin-left: 150px;}
+  100% {margin-left: 210px;}
+}
+
+.overlayHome {
+  position: absolute;
+  margin-left: 95px;
+  margin-top: 235px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 2px solid white;
+  height: 110px;
+  width: 420px;
+  opacity: 0;
+  transition: all .7s ease;
+  background-color: #377BB5;
+  border-top-left-radius: 20px 20px;
+  border-bottom-right-radius: 20px 20px;
+  transform: scale(.5,.5);
+  box-shadow: 2px 2px yellow;
+}
+
+.homeContainer:hover .overlayHome {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+.homeText {
+  margin-left: 30px;
+  color: white;
+  font-size: 12px;
+  text-shadow: .5px .5px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.nikkiPhoto {
+  margin-left: -230px;
+  margin-top: 15px;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 3px 3px black;
+}
+
+/* END */
+
+/* ALL ROSIES */
+
+.rosieTitle {
+  color: white;
+  font-size: 40px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+
+.rosieCol {
+  animation-name: rosieCol1;
+  animation-fill-mode: forwards;
+  animation-duration: .8s;
+  opacity: 0;
+}
+
+@keyframes rosieCol1 {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.addRosie {
+  border: 1.4px solid black;
+  color: black;
+  border-radius: 10px;
+  margin-top: -40px;
+  font-size: 15px;
+  height: 35px;
+  width: 250px;
+  transition: all .3s ease-in-out;
+  animation-name: revealbutton;
+  animation-duration: .7s;
+}
+
+@keyframes revealbutton {
+  0% {margin-left: -100px;}
+  100% {margin-left: 0px;}
+}
+
+.addRosie:hover {
+  background-color: #FCDA31;
+  transform:scale(1.05);
+}
+
+.rosieContainer {
+  position: relative;
+  width: 50%;
+  margin-left: 70px;
+}
+
+.rosiePic {
+  margin-left: -80px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px black;
+}
+
+.overlayElement {
+  position: absolute;
+  margin-left: -78px;
+  top: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  width: 175%;
+  opacity: 0;
+  transition: all .5s ease;
+  background-color: #377BB5;
+  border-bottom-left-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+}
+
+.rosieContainer:hover .overlayElement {
+  opacity: 1;
+}
+
+.middleText {
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 1px black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* END */
+
+/* ROSIE EDIT */
+
+.rosieEdit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  text-align: right;
+  font-weight: bolder;
+  color: #D10101;
+}
+
+.checkBox {
+  margin-right: -264px;
+}
+
+.rosieButton {
+  border-radius: 10px;
+  margin: 5px;
+  height: 30px;
+  width: 100px;
+  transition: all .3s ease-in-out;
+}
+
+.rosieButton:hover {
+  background-color: #FCDA31;
+  transform:scale(1.05);
+  cursor: pointer;
+}
+
+/* END */
+
+/* INDIVIDUAL ROSIE ID */
+
+.rowOne {
+  margin: -30px;
+}
+
+.rosiePic2 {
+  margin-left: -80px;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 3px 3px black;
+  animation-name: revealpic;
+  animation-duration: .8s;
+}
+
+@keyframes revealpic {
+  0% {margin-left: -300px;}
+  100% {margin-left: -80px;}
+}
+
+.rosieName {
+  font-size: 40px;
+  margin-bottom: 25px;
+  margin-left: -15%;
+  animation-name: revealname;
+  animation-duration: .9s;
+}
+
+@keyframes revealname {
+  0% {margin-left: -60%;}
+  100% {margin-left: -15%;}
+}
+
+.rosieLabel {
+  background-color: #377BB5;
+  box-shadow: 4px 4px black;
+  border: 2px solid white;
+}
+
+.singleRosie {
+  position: relative;
+  margin-top: 10%;
+  margin-left: 30px;
+}
+
+.rosieInfo {
+  font-size: 25px;
+  margin-top: 90px;
+  margin-left: -380px;
+  font-weight: bolder;
+  animation-name: reveal;
+  animation-duration: 1s;
+}
+
+@keyframes reveal {
+  0% {margin-left: 0px;}
+  100% {margin-left: -380px;}
+}
+
+.rosieInfo2 {
+  text-align: left;
+  animation-fill-mode: forwards;
+  animation-name: reveal2;
+  animation-duration: .9s;
+}
+
+@keyframes reveal2 {
+  0% {margin-left: 0px;}
+  100% {margin-left: -150px;}
+}
+
+/* END */
+
+/* SOCKET */
+
+.messageLabel {
+  background-color: grey;
+  border-radius: 12px;
+  font-size: 15px;
+}
+
+.fullScheduler {
+  color: black;
+  animation-name: schedule;
+  animation-duration: 1.0s;
+}
+
+@keyframes schedule {
+  0% {margin-left: 250px;}
+  100% {margin-left: 0px;}
+}
+
+.scheduleLabel {
+  margin-left: 0px;
+  background-color: grey;
+  border-radius: 12px;
+  font-size: 25px;
+}
+
+.scheduleButton {
+  border-radius: 10px;
+  margin: 5px;
+  height: 30px;
+  width: 100px;
+  transition: all .3s ease-in-out;
+}
+
+.scheduleButton:hover {
+  background-color: #FCDA31;
+  transform:scale(1.05);
+  cursor: pointer;
+}
+
+.messagesAll {
+  font-size: 12px;
+  height: 150px;
+  color: #D10101;
+  font-weight: bolder;
+  border: 2px solid grey;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  overflow-y: auto;
+  text-align: right;
+}
+
+.deleteButton {
+  height: 25px;
+  border-radius: 10px;
+  margin: 3px;
+}
+
+.myName {
+  border-radius: 7px;
+  width: 300px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.myText {
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+}
+
+/* END  */
+
+/* SUPPORT TEAM INDEX */
+
+.supportText {
+  font-weight: bolder;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px #377BB5;
+}
+
+.supportGrid {
+  padding: 0 375px;
+  margin-left: -400px;
+}
+
+.supportCol1 {
+  animation-name: revealsupport1;
+  animation-duration: .7s;
+}
+
+@keyframes revealsupport1 {
+  0% {margin-left: -100px;}
+  100% {margin-left: 0px;}
+}
+
+.supportCol2 {
+  animation-name: revealsupport2;
+  animation-duration: .9s;
+}
+
+@keyframes revealsupport2 {
+  0% {margin-left: -200px;}
+  100% {margin-left: 0px;}
+}
+
+.supportCol3 {
+  animation-name: revealsupport3;
+  animation-duration: 1s;
+}
+
+@keyframes revealsupport3 {
+  0% {margin-left: -300px;}
+  100% {margin-left: 0px;}
+}
+
+.supportNames {
+  font-size: 16px;
+  text-align: left;
+}
+
+/* END  */
+
+/* NEW MANAGER */
+
+.managerNew {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  text-align: right;
+  font-weight: bolder;
+  color: #D10101;
+}
+
+.managerButton {
+  border-radius: 10px;
+  font-size: 20px;
+  transition: all .3s ease-in-out;
+  color: #D10101;
+}
+
+.managerButton:hover {
+  background-color: #FCDA31;
+  transform:scale(1.05);
+}
+
+/* END */
+
+/* EDIT MANAGER */
+
+.supportEdit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  text-align: right;
+  font-weight: bolder;
+  color: black;
+}
+
+/* END */
+
+/* MANAGER MULTI SELECT */
+
+.sectionHeading {
+  font-weight: bold;
+  text-align: center;
+  margin: 15px;
+}
+
+/* END */
+
+/* SUPPORT INDIVIDUALS */
+
+.learnMore {
+  text-shadow: 1px 1px #377BB5;
+  animation-name: learnmore;
+  animation-duration: .7s;
+}
+
+@keyframes learnmore {
+  0% {margin-left: -180px;}
+  100% {margin-left: 0px;}
+}
+
+.supportPic {
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 4px 4px black;
+  animation-name: supportpic;
+  animation-duration: .8s;
+}
+
+@keyframes supportpic {
+  0% {margin-left: 180px;}
+  100% {margin-left: 0px;}
+}
+
+.suppName {
+  text-shadow: 1px 1px grey;
+}
+
+.supportInfo {
+  animation-name: supportinfo;
+  animation-duration: .7s;
+}
+
+@keyframes supportinfo {
+  0% {margin-left: -320px;}
+  100% {margin-left: 0px;}
+}
+
+.editLink {
+  font-size: 20px;
+  animation-name: reveal5;
+  animation-duration: .6s;
+}
+
+@keyframes reveal5 {
+  0% {margin-left: 180px;}
+  100% {margin-left: 0px;}
+}
+
+.editButton {
+  color: black;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 15px;
+  height: 30px;
+  width: 200px;
+  transition: all .3s ease-in-out;
+  animation-name: reveal3;
+  animation-duration: .7s;
+}
+
+@keyframes reveal3 {
+  0% {margin-left: -180px;}
+  100% {margin-left: 10px;}
+}
+
+.editButton:hover {
+  background-color: #FCDA31;
+  transform:scale(1.05);
+}
+
+.editButton2 {
+  color: red;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 20px;
+  height: 40px;
+  width: 200px;
+  transition: all .3s ease-in-out;
+  animation-name: reveal4;
+  animation-duration: .8s;
+}
+
+@keyframes reveal4 {
+  0% {margin-left: 280px;}
+  100% {margin-left: 10px;}
+}
+
+.editButton2:hover {
+  background-color: #FCDA31;
+  transform:scale(1.05);
+}
+
+.editButton3 {
+  color: red;
+  border: 1.4px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 20px;
+  height: 40px;
+  width: 130px;
+  transition: all .3s ease-in-out;
+}
+
+.editButton3:hover {
+  background-color: #FCDA31;
+  transform:scale(1.05);
+}
+
+.supportTitle {
+  margin-left: 1%;
+  text-shadow: 1px 1px #377BB5;
+}
+
+/* END */
+
+/* BUDDIES */
+
+.addBuddy {
+  transition: .3s ease-in-out;
+}
+
+.addBuddy:hover {
+  color: #FCDA31;
+}
+/* END */
+
+/* MENTORS */
+
+.addMentor {
+  transition: .3s ease-in-out;
+}
+
+.addMentor:hover {
+  color: #FCDA31;
+}
+/* END */
+
+/* MANAGERS */
+
+.addManager {
+  transition: .3s ease-in-out;
+}
+
+.addManager:hover {
+  color: #FCDA31;
+}
+
+/* END */
+
+/* PROJECTS */
+
+.projLink {
+  transition: .3s ease-in-out;
+}
+
+.projLink:hover {
+  color: #FCDA31;
+}
+
+.projectGrid {
+  padding: 0 475px;
+  margin-left: -550px;
+  text-align: right;
+}
+
+.projectCol1 {
+  margin-bottom: 20px;
+  animation-name: revealCol1;
+  animation-duration: .7s;
+}
+
+@keyframes revealCol1 {
+  0% {margin-left: -200px;}
+  100% {margin-left: 0px;}
+}
+
+.projectCol2 {
+  margin-bottom: 20px;
+  animation-name: revealCol2;
+  animation-duration: .7s;
+}
+
+@keyframes revealCol2 {
+  0% {margin-left: -200px;}
+  100% {margin-left: 0px;}
+}
+
+.projectNames {
+  font-size: 14px;
+}
+
+/* END */

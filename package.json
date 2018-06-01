@@ -1,0 +1,37 @@
+{
+  "name": "rosie_hq",
+  "version": "1.0.0",
+  "engines": {
+    "node": "8.9.4"
+  },
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "concurrently \"npm run dev\" \"npm run client\"",
+    "server": "node server.js",
+    "client": "cd client && npm start",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "create-react-class": "^15.6.3",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.3",
+    "pg-promise": "^8.4.4",
+    "prop-types": "^15.6.1",
+    "psqljs": "0.0.6",
+    "react": "^16.4.0",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.4.0",
+    "react-select": "^1.2.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "socket.io": "^2.1.1"
+  }
+}
